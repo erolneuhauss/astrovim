@@ -20,6 +20,7 @@ return {
       config = function() require("nvim-surround").setup {} end,
     },
     "HiPhish/rainbow-delimiters.nvim", -- Rainbow bracket highlighting for Treesitter
+    "diogo464/kubernetes.nvim",
     "folke/todo-comments.nvim",
     opts = {
       keywords = {

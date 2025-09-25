@@ -20,6 +20,7 @@ return {
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.terraform" },
   { import = "astrocommunity.pack.toml" },
+  { import = "astrocommunity.pack.yaml" },
   { import = "astrocommunity.recipes.neovide" },
   -- import/override with your plugins folder
 }
