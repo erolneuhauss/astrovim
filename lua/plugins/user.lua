@@ -7,6 +7,19 @@
 return {
   {
     {
+      "AstroNvim/astrocore",
+      opts = {
+        features = {
+          large_buf = {
+            size = 1024 * 1024, -- 1 MB
+            lines = 10000, -- keep default
+            line_length = 1000, -- keep default
+            notify = true, -- optional
+          },
+        },
+      },
+    },
+    {
       "andymass/vim-matchup",
       event = "VeryLazy",
       config = function()
