@@ -35,6 +35,9 @@ return {
       },
       pattern = {
         [".*/etc/foo/.*"] = "fooscript",
+        [".*/site%.ya?ml"] = "yaml.ansible",
+        ["site%.ya?ml"] = "yaml.ansible",
+        [".*/ansible/projects/.*.ya?ml"] = "yaml.ansible",
       },
     },
     -- vim options can be configured here
