@@ -5,10 +5,8 @@
 ---@type LazySpec
 return {
   "nvim-treesitter/nvim-treesitter",
-  opts = function(_, opts)
-    -- Ensure Treesitter parsers are installed
-    opts.ensure_installed = opts.ensure_installed or {}
-    vim.list_extend(opts.ensure_installed, {
+  opts = {
+    ensure_installed = {
       "bash",
       "dockerfile",
       "gotmpl",
@@ -17,22 +15,24 @@ return {
       "jq",
       "json",
       "latex",
+      "lua",
       "make",
       "markdown",
       "markdown_inline",
-      "lua",
       "php",
       "terraform",
       "todotxt",
       "vim",
       "yaml",
-    })
-
-    -- Enable bracket rainbow highlighting
-    opts.rainbow = {
-      enable = true,
-      extended_mode = true, -- Highlight non-bracket delimiters
-      max_file_lines = 1000, -- Disable for large files
-    }
-  end,
+      "vim",
+      -- add more arguments for adding more treesitter parsers
+    },
+  },
 }
+-- This needs to be integrated
+-- -- Enable bracket rainbow highlighting
+-- opts.rainbow = {
+--   enable = true,
+--   extended_mode = true, -- Highlight non-bracket delimiters
+--   max_file_lines = 1000, -- Disable for large files
+-- }
